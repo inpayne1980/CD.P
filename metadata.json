@@ -1,0 +1,9 @@
+{
+  "name": "ClipDrop.Pro",
+  "description": "A comprehensive AI studio showcasing Gemini 2.5 Live API, Veo Video Generation, Grounding (Search/Maps), and Advanced Image/Audio capabilities.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ]
+}

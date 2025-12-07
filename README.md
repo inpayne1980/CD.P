@@ -1,11 +1,12 @@
-<div align="center">
+# ClipDrop.pro
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+**Drop a link. Get viral clips.**
 
-  <h1>Built with AI Studio</h2>
+## Setup
+1. **Supabase**: Create project, run `supabase/schema.sql`, get Keys.
+2. **Env**: Create `.env.local` with `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY`.
+3. **Storage**: Ensure 'results' bucket is public.
+4. **Worker**: Deploy `worker/process_clip.py` to a VPS or dyad.sh. Install requirements (`yt-dlp`, `whisper`, `moviepy`, `supabase`).
+5. **Run**: `npm install && npm run dev`.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
-
-  <a href="https://aistudio.google.com/apps">Start building</a>
-
-</div>
+Built with Next.js 14, Tailwind, Supabase.
